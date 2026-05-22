@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+main{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #b0adf7, #a6d3f3);
+}
+h1 {
+    margin-top: 50px;
+    font-size: 64px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 8px;
+}
+.subtitulo {
+    font-size: 32px;
+    color:black;
+    margin-bottom: 36px;
+}
+.progresso-caixa {
+    width: 60%;
+    margin-bottom: 36px;
+}
+.progresso-topo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 8px;
+}
+.progresso-fundo {
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+}
+
+.progresso-barra {
+    height: 10px;
+    width: 0%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: width 0.7s ease;
+}
+.missoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 60%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 28px ;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    border-top: 4px solid #5260FF;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.card.concluido {
+    border-top-color: #6fcf97;
+}
+.xp {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-color: #5260FF;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+.card img {
+    height: 90px;
+    padding: 12px;
+}
+.card-titulo {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+.card-descricao {
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+}
+.btn-concluir {
+    width: 100%;
+    padding: 11px 0;
+    margin-top: 4px;
+    background-color: #5260FF;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-concluir:hover {
+    background-color: #252f97;
+}
+.btn-concluir:disabled {
+    background-color: #d4edda;
+    color: #2a7d4f;
+    cursor: default;
+
+}
+
+@media (max-width: 1024px) {
+
+    main {
+        padding: 40px 28px 56px 28px;
+    }
+    main h1 {
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width: 768px) {
+ 
+    main {
+        padding: 36px 20px 48px 20px;
+    }
+    main h1 {
+        font-size: 48px;
+    }
+    .subtitulo {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+    .progresso-caixa {
+        margin-bottom: 28px;
+    }
+ 
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 28px 16px 40px 16px;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .card {
+        width: 100%;
+    }
+ 
+    .card img {
+        height: 70px;
+    }
+ 
+    .card-titulo {
+        font-size: 14px;
+    }
+ 
+}
+
+@media (max-width: 480px) {
+
+    main {
+        padding: 24px 14px 36px 14px;
+    }
+    main h1 {
+        font-size: 22px;
+    }
+    .subtitulo {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .progresso-topo {
+        font-size: 12px;
+    }
+    .missoes {
+        gap: 16px;
+    }
+    .card {
+        width: 100%;
+        padding: 24px 18px 20px 18px;
+    }
+    .card img {
+        height: 60px;
+    }
+    .card-titulo {
+        font-size: 14px;
+    } 
+    .card-descricao {
+        font-size: 12px;
+    } 
+    .btn-concluir {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    .xp {
+        font-size: 10px;
+        padding: 3px 8px;
+    } 
+}

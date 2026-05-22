@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/missoes.css">
+    <script src="../js/missoes.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <img src="../image/logo.png" alt="Logo SoulMind">
+    </div>
+    <nav>
+      <a class="active" href="../index.html">INÍCIO</a>
+      <a href="#">QUEM SOMOS</a>
+      <a href="#">SOBRE</a>
+      <a href="#">FAQ</a>
+      <a href="#">CONTATO</a>
+    </nav>
+  </header>
+   <main>
+        <h1>Missões</h1>
+        <p class="subtitulo">Complete os desafios e cuide do planeta!</p>
+        <div class="progresso-caixa">
+            <div class="progresso-topo">
+                <span>Progresso semanal</span>
+                <span id="texto-progresso">0 de 4 concluídas</span>
+            </div>
+            <div class="progresso-fundo">
+                <div class="progresso-barra" id="barraProg"></div>
+            </div>
+        </div>
+        <section class="missoes">
+            <div class="card">
+                <span class="xp">+50 XP</span>
+                <img src="../image/reciclagem.png" alt="Reciclagem">
+                <p class="card-titulo">Recicle 3 itens de plástico</p>
+                <p class="card-descricao">Descarte corretamente 3 itens de plástico no ponto de coleta mais próximo.</p>
+                <button class="btn-concluir" onclick="concluir(this)">Marcar como concluída</button>
+            </div>
+            <div class="card">
+                <span class="xp">+40 XP</span>
+                <img src="../image/agua.png" alt="Gota de água">
+                <p class="card-titulo">Economize 10L de água</p>
+                <p class="card-descricao">Tome banhos mais curtos e feche a torneira enquanto escova os dentes.</p>
+                <button class="btn-concluir" onclick="concluir(this)">Marcar como concluída</button>
+            </div>
+            <div class="card">
+                <span class="xp">+60 XP</span>
+                <img src="../image/bicicleta.png" alt="Bicicleta">
+                <p class="card-titulo">Use transporte sustentável</p>
+                <p class="card-descricao">Vá de bike ou a pé para algum lugar que normalmente iria de carro.</p>
+                <button class="btn-concluir" onclick="concluir(this)">Marcar como concluída</button>
+            </div>
+            <div class="card">
+                <span class="xp">+45 XP</span>
+                <img src="../image/sacola.png" alt="Sacola ecológica">
+                <p class="card-titulo">Reduza o uso de plástico</p>
+                <p class="card-descricao">Evite qualquer item descartável de plástico por um dia inteiro.</p>
+                <button class="btn-concluir" onclick="concluir(this)">Marcar como concluída</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
