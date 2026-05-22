@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+header{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+header a{
+    color: #111;
+}
+
+.tbs-ol {
+  fill: currentColor;
+  fill-rule: evenodd;
+  stroke: currentColor;
+  stroke-linejoin: round;
+  stroke-width: var(--svg-stroke-width--4px, 4px);
+  d: path("M44 40.836q-7.34-8.96-13.036-10.168t-10.846-.365V41L4 23.545L20.118 7v10.167q9.523.075 16.192 6.833q6.668 6.758 7.69 16.836Z");
+}
+main{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #b0adf7, #a6d3f3);
+
+}
+#hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#hero h1{
+    font-size: 64px;
+    color: #111;
+}
+.imagem{
+    margin-top: 10px;
+    width: 50%;
+    margin-bottom: 30px;
+}
+#mensagens{
+    position: relative;
+    width: 55%;
+    justify-content: left;
+}
+.div1, .div2, .div3{
+    position: relative;
+    display: flex;
+    width: 60%;
+    margin-left: 5%;
+    background-color: white;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.div1, .div2, .div3 p{
+    font-size: 20px;
+    font-weight: 600;
+}
+button{
+    padding: 1rem 2.2rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: #5260FF;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    margin-right: 2%;
+}
+button:hover{
+    background: #4B49E8;
+    transform: translateY(-0.2rem);
+}
+.botoes{
+    width: 80%;
+    margin-left: 5%;
+}
+.o8jdtx {
+  fill: var(--svg-color--5260ff, #5260ff);
+  d: path("m20.34 9.32l-14-7a3 3 0 0 0-4.08 3.9l2.4 5.37a1.06 1.06 0 0 1 0 .82l-2.4 5.37A3 3 0 0 0 5 22a3.14 3.14 0 0 0 1.35-.32l14-7a3 3 0 0 0 0-5.36Zm-.89 3.57l-14 7a1 1 0 0 1-1.35-1.3l2.39-5.37a2 2 0 0 0 .08-.22h6.89a1 1 0 0 0 0-2H6.57a2 2 0 0 0-.08-.22L4.1 5.41a1 1 0 0 1 1.35-1.3l14 7a1 1 0 0 1 0 1.78");
+  margin-bottom: 95%;
+}
+.mensagem{
+    position: relative;
+    margin-top: 100px;
+    width: 50%;
+    background-color: white;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+}
+#enviar{
+    border: none;
+    width: 85%;
+    font-size: 24px;
+    margin-left: 5%;
+}
+svg{
+    height: 50px;
+}
