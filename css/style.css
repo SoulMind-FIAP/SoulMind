@@ -88,3 +88,113 @@ nav .active{
     height: 520px;
 }
 
+@media (max-width: 1024px){
+
+    header{
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+
+    nav{
+        gap: 0.7rem;
+    }
+
+    nav a{
+        font-size: 0.95rem;
+    }
+    .logo img{
+        height: 80px;
+    }
+    .hero{
+        padding: 4rem 3rem;
+        gap: 4rem;
+    }
+
+    .hero-text h1{
+        font-size: 3rem;
+    }
+
+    .hero-text p{
+        font-size: 1.5rem;
+    }
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo img{
+        height: 75px;
+    }
+
+    nav{
+        width: 100%;
+        gap: 1rem;
+    }
+
+    nav a{
+        font-size: 0.90rem;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-text{
+        width: 100%;
+    }
+
+    .hero-text h1{
+        font-size: 2.4rem;
+    }
+
+    .hero-text p{
+        font-size: 1.2rem;
+    }
+
+    .hero-text button{
+        width: 100%;
+        max-width: 320px;
+        font-size: 1.2rem;
+    }
+
+    .hero-image img{
+        max-width: 350px;
+    }
+}
+
+/* ========================= */
+/* CELULARES PEQUENOS */
+/* ========================= */
+
+@media (max-width: 480px){
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
+    .hero-text p{
+        font-size: 1rem;
+    }
+
+    nav{
+        gap: 0.8rem;
+    }
+
+    nav a{
+        font-size: 0.65rem;
+    }
+
+    .hero-image img{
+        max-width: 280px;
+    }
+}
