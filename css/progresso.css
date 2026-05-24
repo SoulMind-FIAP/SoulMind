@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+main{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #c7c5fc, #badcf4);
+    
+}
+ 
+.card {
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.card-robo {
+    background-color: #e8e6fb;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    width: 50%;
+    margin-top: 50px;
+}
+.img-robo {
+    height: 200px;
+}
+.ola {
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 6px;
+}
+ 
+.frase {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    line-height: 1.35;
+}
+.card-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.stat {
+    display: flex;
+    background: white;
+    width: 17%;
+    border-radius: 30px;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+.stat-numero {
+    font-size: 32px;
+    font-weight: 800;
+    color: black;
+}
+.stat-label {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+.card-progresso {
+    height: 300px;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.card-titulo {
+    font-size: 40px;
+    width: 100%;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+}
+.linha-progresso {
+    display: flex;
+    gap: 5%;
+    flex-direction: row;
+    margin:0 ;
+    margin-top: 20px;
+    align-items: center;
+}
+.circulo-wrap {
+    position: relative;
+    height: 150px;
+    margin: 0;
+}
+.circulo-svg {
+    height: 150px;
+}
+.anel-fundo {
+    fill: none;
+    stroke: #e8e8e8;
+    stroke-width: 10;
+}
+.anel-prog {
+    fill: none;
+    stroke: #5b8dee;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease;
+}
+.porcento {
+    position: absolute;
+    top: 60px;
+    left: 25%;
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+.texto-prog {
+    font-size: 24px;
+    color: black;
+    line-height: 1.5;
+}
+.card-conquistas {
+    margin-top: 20px;
+    height: 150px;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 50px ;
+
+}
+.lista-conquistas {
+    display: flex;
+    gap: 12px;
+}
+.icone-conquista {
+    font-size: 28px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.verde {
+    background-color: #c8f0d8;
+}
+.azul {
+    background-color: #c0dff8;
+}
+.verde-claro {
+    background-color: #c8eee0;
+}
+ 
