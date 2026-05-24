@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/personalizar.css">
+    <script src="../js/personalizar.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <img src="../image/logo.png" alt="Logo SoulMind">
+    </div>
+    <nav>
+      <a  href="../index.html">INÍCIO</a>
+      <a class="active" href="./pages/assistente.html">AVATAR</a>
+      <a href="#">QUEM SOMOS</a>
+      <a href="#">SOBRE</a>
+      <a href="#">FAQ</a>
+      <a href="#">CONTATO</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Personalizar avatar</h1>
+    <section class="secao-avatar">
+            <div class="circulo-avatar">
+                <img src="../image/roupa1.png" alt="Avatar do robô">
+            </div>
+            <div class="linha-pontos">
+                <span>Seus pontos</span>
+                <span class="badge-pontos">70 pts</span>
+            </div>
+        </section>
+        <section class="abas">
+            <button class="aba ativo" onclick="trocarAba('roupas', this)">
+                <div class="aba-icone">👕</div>
+                <span class="aba-texto">Roupas</span>
+            </button>
+            <button class="aba" onclick="trocarAba('acessorios', this)">
+                <div class="aba-icone">🕶️</div>
+                <span class="aba-texto">Acessórios</span>
+            </button>
+        </section>
+            <section class="painel ativo" id="painel-roupas">
+                <div class="item" onclick="equipar(this)">
+                    <span class="item-img"><img src="../image/roupa22.png" alt=""></span>
+                    <span class="item-label">Moletom preto</span>
+                    <span class="item-label">10 pontos</span>
+                </div>
+                <div class="item equipado" onclick="equipar(this)">
+                    <span class="item-img"><img src="../image/roupa11.png" alt=""></span>
+                    <span class="item-label">Moletom branco</span>
+                    <span class="item-label">Equipado</span>
+                </div>
+                <div class="item" onclick="equipar(this)">
+                    <span class="item-img"><img src="../image/roupa33.png" alt=""></span>
+                    <span class="item-label">Moletom verde</span>
+                    <span class="item-label">50 pts</span>
+                </div>
+                <div class="item bloqueado">
+                    <span class="item-img"><img src="../image/roupa44.png" alt=""></span>
+                    <span class="item-label">Camiseta</span>
+                    <span class="item-label">150 pts</span>
+                </div>
+            </section>
+            <section class="painel" id="painel-acessorios">
+                <div class="item equipado" onclick="equipar(this)">
+                    <span class="item-img"><img src="../image/acessorio5.png" alt=""></span>
+                    <span class="item-label">Mochila</span>
+                    <span class="item-label">Equipado</span>
+                </div>
+                <div class="item" onclick="equipar(this)">
+                    <span class="item-img"><img src="../image/acessorio1.png" alt=""></span>
+                    <span class="item-label">Touca</span>
+                    <span class="item-label">10 pts</span>
+                </div>
+                <div class="item" onclick="equipar(this)">
+                    <span class="item-img"><img src="../image/acessorio2.png" alt=""></span>
+                    <span class="item-label">Óculos</span>
+                    <span class="item-label">30 pts</span>
+                </div>
+                <div class="item bloqueado">
+                    <span class="item-img"><img src="../image/acessorio3.png" alt=""></span>
+                    <span class="item-label">Fone</span>
+                    <span class="item-label">90 pts</span>
+                </div>
+                <div class="item bloqueado">
+                    <span class="item-img"><img src="../image/acessorio4.png" alt=""></span>
+                    <span class="item-label">Capa</span>
+                    <span class="item-label">150 pts</span>
+                </div>
+                <div class="item bloqueado">
+                    <span class="item-img"><img src="../image/acessorio6.png" alt=""></span>
+                    <span class="item-label">Viseira</span>
+                    <span class="item-label">100 pts</span>
+                </div>
+            </section>
+        </main>
+ 
+</body>
+</html>
