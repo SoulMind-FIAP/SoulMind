@@ -45,7 +45,6 @@ h1 {
     background-color: rgba(255, 255, 255, 0.35);
     border-radius: 10px;
 }
-
 .progresso-barra {
     height: 10px;
     width: 0%;
@@ -64,7 +63,7 @@ h1 {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 28px ;
+    padding: 28px;
     width: 48%;
     display: flex;
     flex-direction: column;
@@ -73,7 +72,6 @@ h1 {
     position: relative;
     border-top: 4px solid #5260FF;
 }
-
 .card:hover {
     background-color: rgba(255, 255, 255, 0.95);
 }
@@ -120,7 +118,6 @@ h1 {
     border-radius: 12px;
     cursor: pointer;
 }
-
 .btn-concluir:hover {
     background-color: #252f97;
 }
@@ -128,26 +125,28 @@ h1 {
     background-color: #d4edda;
     color: #2a7d4f;
     cursor: default;
-
 }
 
 @media (max-width: 1024px) {
-
     main {
         padding: 40px 28px 56px 28px;
     }
-    main h1 {
+    h1 {
         font-size: 60px;
     }
-
+    .progresso-caixa {
+        width: 75%;
+    }
+    .missoes {
+        width: 75%;
+    }
 }
 
 @media (max-width: 768px) {
- 
     main {
         padding: 36px 20px 48px 20px;
     }
-    main h1 {
+    h1 {
         font-size: 48px;
     }
     .subtitulo {
@@ -155,45 +154,53 @@ h1 {
         margin-bottom: 28px;
     }
     .progresso-caixa {
+        width: 90%;
         margin-bottom: 28px;
     }
- 
+    .progresso-topo {
+        font-size: 16px;
+    }
+    .missoes {
+        width: 90%;
+    }
 }
 
 @media (max-width: 600px) {
     main {
         padding: 28px 16px 40px 16px;
     }
-
-    main h1 {
+    h1 {
         font-size: 24px;
     }
-
     .subtitulo {
         font-size: 16px;
         margin-bottom: 24px;
     }
-
+    .progresso-caixa {
+        width: 100%;
+    }
+    .progresso-topo {
+        font-size: 14px;
+    }
+    .missoes {
+        width: 100%;
+    }
     .card {
         width: 100%;
     }
- 
     .card img {
         height: 70px;
     }
- 
     .card-titulo {
         font-size: 14px;
     }
- 
 }
 
 @media (max-width: 480px) {
-
     main {
         padding: 24px 14px 36px 14px;
     }
-    main h1 {
+    h1 {
         font-size: 22px;
     }
     .subtitulo {
@@ -215,10 +222,10 @@ h1 {
     }
     .card-titulo {
         font-size: 14px;
-    } 
+    }
     .card-descricao {
         font-size: 12px;
-    } 
+    }
     .btn-concluir {
         font-size: 12px;
         padding: 10px 0;
@@ -226,5 +233,5 @@ h1 {
     .xp {
         font-size: 10px;
         padding: 3px 8px;
-    } 
+    }
 }

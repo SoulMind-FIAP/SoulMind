@@ -1,29 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
     color: #111;
 }
-main{
-    position:relative;
+
+main {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: linear-gradient(180deg, #c7c5fc, #badcf4);
-    
 }
- 
+
 .card {
     border-radius: 20px;
     padding: 20px;
     display: flex;
     justify-content: center;
 }
+
 .card-robo {
     background-color: #e8e6fb;
     display: flex;
@@ -33,28 +35,32 @@ main{
     width: 50%;
     margin-top: 50px;
 }
+
 .img-robo {
     height: 200px;
 }
+
 .ola {
     font-size: 32px;
     font-weight: 600;
     color: black;
     margin-bottom: 6px;
 }
- 
+
 .frase {
     font-size: 32px;
     font-weight: 700;
     color: black;
     line-height: 1.35;
 }
+
 .card-stats {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
+
 .stat {
     display: flex;
     background: white;
@@ -64,16 +70,19 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
 .stat-numero {
     font-size: 32px;
     font-weight: 800;
     color: black;
 }
+
 .stat-label {
     font-size: 20px;
     color: black;
     font-weight: 500;
 }
+
 .card-progresso {
     height: 300px;
     width: 50%;
@@ -83,6 +92,7 @@ main{
     align-items: flex-start;
     flex-direction: column;
 }
+
 .card-titulo {
     font-size: 40px;
     width: 100%;
@@ -90,27 +100,32 @@ main{
     color: #1a1a2e;
     margin-bottom: 16px;
 }
+
 .linha-progresso {
     display: flex;
     gap: 5%;
     flex-direction: row;
-    margin:0 ;
+    margin: 0;
     margin-top: 20px;
     align-items: center;
 }
+
 .circulo-wrap {
     position: relative;
     height: 150px;
     margin: 0;
 }
+
 .circulo-svg {
     height: 150px;
 }
+
 .anel-fundo {
     fill: none;
     stroke: #e8e8e8;
     stroke-width: 10;
 }
+
 .anel-prog {
     fill: none;
     stroke: #5b8dee;
@@ -118,6 +133,7 @@ main{
     stroke-linecap: round;
     transition: stroke-dashoffset 1s ease;
 }
+
 .porcento {
     position: absolute;
     top: 60px;
@@ -126,11 +142,13 @@ main{
     font-weight: 800;
     color: #1a1a2e;
 }
+
 .texto-prog {
     font-size: 24px;
     color: black;
     line-height: 1.5;
 }
+
 .card-conquistas {
     margin-top: 20px;
     height: 150px;
@@ -140,13 +158,14 @@ main{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 50px ;
-
+    margin-bottom: 50px;
 }
+
 .lista-conquistas {
     display: flex;
     gap: 12px;
 }
+
 .icone-conquista {
     font-size: 28px;
     width: 56px;
@@ -156,13 +175,309 @@ main{
     align-items: center;
     justify-content: center;
 }
+
 .verde {
     background-color: #c8f0d8;
 }
+
 .azul {
     background-color: #c0dff8;
 }
+
 .verde-claro {
     background-color: #c8eee0;
 }
- 
+@media (max-width: 1024px) {
+    .card-robo {
+        width: 75%;
+    }
+
+    .ola {
+        font-size: 26px;
+    }
+
+    .frase {
+        font-size: 26px;
+    }
+
+    .stat {
+        width: 22%;
+    }
+
+    .stat-numero {
+        font-size: 26px;
+    }
+
+    .stat-label {
+        font-size: 17px;
+    }
+
+    .card-progresso {
+        width: 75%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .card-titulo {
+        font-size: 32px;
+    }
+
+    .texto-prog {
+        font-size: 20px;
+    }
+
+    .card-conquistas {
+        width: 75%;
+        height: auto;
+        padding: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .card-robo {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .img-robo {
+        height: 140px;
+    }
+
+    .ola {
+        font-size: 22px;
+    }
+
+    .frase {
+        font-size: 22px;
+    }
+
+    .card-stats {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 20px;
+    }
+
+    .stat {
+        width: 90%;
+        height: 80px;
+    }
+
+    .stat-numero {
+        font-size: 24px;
+    }
+
+    .stat-label {
+        font-size: 16px;
+    }
+
+    .card-progresso {
+        width: 90%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .card-titulo {
+        font-size: 28px;
+    }
+
+    .linha-progresso {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .texto-prog {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .circulo-wrap {
+        height: 120px;
+    }
+
+    .circulo-svg {
+        height: 120px;
+    }
+
+    .porcento {
+        font-size: 22px;
+        top: 45px;
+        left: 28%;
+    }
+
+    .card-conquistas {
+        width: 90%;
+        height: auto;
+        padding: 16px;
+        margin-bottom: 30px;
+    }
+
+    .lista-conquistas {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-robo {
+        width: 95%;
+        margin-top: 20px;
+        padding: 12px 16px;
+        gap: 10px;
+    }
+
+    .img-robo {
+        height: 110px;
+    }
+
+    .ola {
+        font-size: 18px;
+    }
+
+    .frase {
+        font-size: 18px;
+    }
+
+    .stat {
+        width: 95%;
+        height: 72px;
+    }
+
+    .stat-numero {
+        font-size: 20px;
+    }
+
+    .stat-label {
+        font-size: 14px;
+    }
+
+    .card-progresso {
+        width: 95%;
+        padding: 12px;
+    }
+
+    .card-titulo {
+        font-size: 22px;
+    }
+
+    .circulo-wrap {
+        height: 100px;
+    }
+
+    .circulo-svg {
+        height: 100px;
+    }
+
+    .porcento {
+        font-size: 18px;
+        top: 36px;
+        left: 26%;
+    }
+
+    .texto-prog {
+        font-size: 15px;
+    }
+
+    .card-conquistas {
+        width: 95%;
+        padding: 12px;
+        margin-bottom: 24px;
+    }
+
+    .icone-conquista {
+        font-size: 22px;
+        width: 46px;
+        height: 46px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-robo {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+        padding: 16px;
+    }
+
+    .img-robo {
+        height: 90px;
+    }
+
+    .ola {
+        font-size: 16px;
+    }
+
+    .frase {
+        font-size: 16px;
+    }
+
+    .card-stats {
+        padding: 0 10px;
+        gap: 8px;
+    }
+
+    .stat {
+        width: 100%;
+        height: 64px;
+        border-radius: 16px;
+    }
+
+    .stat-numero {
+        font-size: 18px;
+    }
+
+    .stat-label {
+        font-size: 13px;
+    }
+
+    .card-progresso {
+        width: 100%;
+        border-radius: 0;
+        padding: 12px 10px;
+    }
+
+    .card-titulo {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .linha-progresso {
+        margin-top: 12px;
+        gap: 12px;
+    }
+
+    .circulo-wrap {
+        height: 85px;
+    }
+
+    .circulo-svg {
+        height: 85px;
+    }
+
+    .porcento {
+        font-size: 15px;
+        top: 30px;
+        left: 24%;
+    }
+
+    .texto-prog {
+        font-size: 13px;
+    }
+
+    .card-conquistas {
+        width: 100%;
+        border-radius: 0;
+        padding: 12px 10px;
+        margin-bottom: 20px;
+    }
+
+    .lista-conquistas {
+        gap: 8px;
+    }
+
+    .icone-conquista {
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+    }
+}
