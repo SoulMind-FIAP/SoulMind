@@ -1,0 +1,181 @@
+
+.faq-pagina {
+    background: #EEEEFF;
+    min-height: 100vh;
+    padding: 3rem 5%;
+}
+
+.faq-titulo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #5260FF;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.icone-titulo {
+    color: #5260FF;
+    font-size: 2.2rem;
+    vertical-align: middle;
+}
+.faq-container {
+    max-width: 85%;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.6rem;
+    padding: 1.1rem 1.4rem;
+}
+
+.faq-pergunta {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.faq-pergunta span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.faq-resposta {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 0.6rem 0 0;
+    border-top: 1px solid #eee;
+    padding-top: 0.6rem;
+}
+.faq-banner {
+    background: #5260FF;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    max-width: 85%;
+    margin: 0 auto;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.banner-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icone-banner {
+    font-size: 2rem;
+    color: #fff;
+    background: #6B78FF;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+}
+
+.banner-esquerda h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.2rem;
+}
+
+.banner-esquerda p {
+    font-size: 0.85rem;
+    color: #dde;
+    margin: 0;
+}
+
+.banner-direita {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-shrink: 0;
+}
+
+.btn-fale {
+    background: #fff;
+    color: #5260FF;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.btn-fale:hover {
+    background: #f0f0ff;
+}
+
+.banner-robo {
+    height: 110px;
+}
+@media (max-width: 1024px) {
+    .faq-container,
+    .faq-banner {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .faq-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .banner-esquerda {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-direita {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .banner-robo {
+        height: 90px;
+    }
+}
+@media (max-width: 600px) {
+    .faq-titulo {
+        font-size: 1.8rem;
+    }
+
+    .faq-pagina {
+        padding: 2rem 4%;
+    }
+}
+@media (max-width: 480px) {
+    .faq-titulo {
+        font-size: 1.5rem;
+    }
+
+    .faq-pergunta {
+        font-size: 0.88rem;
+    }
+
+    .btn-fale {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .banner-robo {
+        height: 70px;
+    }
+}

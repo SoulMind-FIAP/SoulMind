@@ -1,0 +1,153 @@
+
+.contato-titulo {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.contato-linha {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 auto 2rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 1.8rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.campo label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.campo input,
+.campo textarea {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    outline: none;
+    transition: border 0.3s;
+    resize: none;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #5260FF;
+}
+
+.formulario-box button {
+    padding: 0.8rem;
+    background: #5260FF;
+    color: #fff;
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.formulario-box button:hover {
+    background: #4B49E8;
+    transform: translateY(-2px);
+}
+
+.banner-final {
+    background: linear-gradient(135deg, #5260FF 0%, #00BFFF 100%);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    gap: 1rem;
+    overflow: hidden;
+    width: 95%;
+}
+.banner-texto h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.4rem;
+}
+
+.banner-texto p {
+    font-size: 1rem;
+    color: #e8f0ff;
+}
+
+.banner-robo img {
+    height: 140px;
+}
+@media (max-width: 1024px) {
+    .contato-linha {
+        max-width: 100%;
+    }
+
+    .banner-final {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .contato-pagina {
+        padding: 2rem 4%;
+    }
+
+    .contato-linha {
+        flex-direction: column;
+    }
+
+    .formulario-box,
+    .outras-formas-box {
+        width: 100%;
+    }
+
+    .banner-final {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+    }
+
+    .banner-robo img {
+        height: 110px;
+    }
+}
+@media (max-width: 600px) {
+    .contato-titulo {
+        font-size: 1.8rem;
+    }
+
+    .banner-texto h2 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 480px) {
+    .contato-titulo {
+        font-size: 1.5rem;
+    }
+
+    .banner-texto h2 {
+        font-size: 1.1rem;
+    }
+
+    .banner-robo img {
+        height: 80px;
+    }
+}

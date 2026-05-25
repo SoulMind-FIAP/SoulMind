@@ -9,7 +9,7 @@ body{
 
     font-family: 'Poppins', sans-serif;
     background: #F4F3FF;
-    color: #111;
+    color: black;
 }
 header{
     position: relative;
@@ -52,7 +52,7 @@ nav .active{
 .hero-text{
     width: 60%;
 }
-.hero-text h1{
+h1{
     font-size: 64px;
     line-height: 1.2;
     margin-bottom: 1.5rem;
@@ -117,6 +117,7 @@ nav .active{
     .hero-text p{
         font-size: 1.5rem;
     }
+    
 }
 
 /* ========================= */
@@ -171,7 +172,38 @@ nav .active{
         max-width: 350px;
     }
 }
+@media (max-width: 600px) {
+  nav {
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
+  nav a {
+    font-size: 0.80rem;
+  }
+
+  .hero {
+    padding: 2.5rem 1.2rem;
+    gap: 1.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .hero-text button {
+    font-size: 1.1rem;
+  }
+
+  .hero-image img {
+    max-width: 280px;
+  }
+}
 /* ========================= */
 /* CELULARES PEQUENOS */
 /* ========================= */
@@ -193,8 +225,24 @@ nav .active{
     nav a{
         font-size: 0.65rem;
     }
+ .hero {
+    padding: 2rem 1rem;
+    gap: 1.2rem;
+  }
 
-    .hero-image img{
-        max-width: 280px;
-    }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-text button {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    max-width: 240px;
+  }
 }

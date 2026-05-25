@@ -15,7 +15,6 @@ main{
     align-items: center;
     flex-direction: column;
     background: linear-gradient(180deg, #b0adf7, #a6d3f3);
-
 }
 #hero{
     position: relative;
@@ -99,4 +98,163 @@ button:hover{
 }
 svg{
     height: 50px;
+}
+
+@media (max-width: 1024px) {
+    #hero h1 {
+        font-size: 48px;
+    }
+
+    .imagem {
+        width: 60%;
+    }
+
+    #mensagens {
+        width: 70%;
+    }
+
+    .div1, .div2, .div3 {
+        width: 75%;
+        height: auto;
+        min-height: 60px;
+    }
+
+    .mensagem {
+        width: 65%;
+    }
+
+    #enviar {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    .imagem {
+        width: 70%;
+    }
+
+    #mensagens {
+        width: 90%;
+    }
+
+    .div1, .div2, .div3 {
+        width: 90%;
+        height: auto;
+        min-height: 55px;
+    }
+
+    .div1, .div2, .div3 p {
+        font-size: 16px;
+    }
+
+    .botoes {
+        width: 95%;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .mensagem {
+        width: 85%;
+        margin-top: 60px;
+    }
+
+    #enviar {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    .imagem {
+        width: 80%;
+    }
+
+    .div1, .div2, .div3 {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .div1, .div2, .div3 p {
+        font-size: 14px;
+    }
+
+    .botoes {
+        margin-left: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 0.7rem 1.2rem;
+        margin-right: 0;
+    }
+
+    .mensagem {
+        width: 92%;
+        margin-top: 40px;
+    }
+
+    #enviar {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 22px;
+    }
+
+    .imagem {
+        width: 90%;
+    }
+
+    #mensagens {
+        width: 98%;
+    }
+
+    .div1, .div2, .div3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .div1, .div2, .div3 p {
+        font-size: 13px;
+    }
+
+    .botoes {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 0.7rem 1rem;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .mensagem {
+        width: 96%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #enviar {
+        font-size: 14px;
+    }
 }

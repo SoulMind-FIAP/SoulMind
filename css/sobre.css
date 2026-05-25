@@ -1,0 +1,159 @@
+
+.sobre {
+    background: #EEEEFF;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.sobre h1 {
+    color: #5260FF;
+}
+
+p {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 2.5rem;
+}
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+.conteudo div {
+    width: 45%;
+}
+.conteudo h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+}
+.conteudo p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.funciona {
+    background: #F4F3FF;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.funciona h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.funciona h1 span {
+    color: #5260FF;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto 3rem;
+}
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1rem;
+    width: 20%;
+    text-align: left;
+}
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.tecnologias {
+    background: #F4F3FF;
+    text-align: center;
+    padding: 2rem 2rem 3rem;
+}
+.tecnologias h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.tecnologias h1 span {
+    color: #5260FF;
+}
+.tech-lista {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.tech-item {
+    border: 1px solid #bbb;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+    background: #F4F3FF;
+}
+@media (max-width: 1024px) {
+    .card {
+        width: 80%;
+    }
+    .cards{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .conteudo div {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .sobre h1,
+    .funciona h1,
+    .tecnologias h1 {
+        font-size: 1.6rem;
+    }
+
+    .tech-item {
+        font-size: 0.85rem;
+        padding: 0.4rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre h1,
+    .funciona h1,
+    .tecnologias h1 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .tech-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tech-item {
+        width: 70%;
+    }
+}
