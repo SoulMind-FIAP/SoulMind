@@ -1,0 +1,221 @@
+/* ========================= */
+/* SEÇÃO QUEM SOMOS          */
+/* ========================= */
+
+.quem-somos {
+    background: #EEEEFF;
+    min-height: 100vh;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.quem-somos h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #5260FF;
+    margin-bottom: 0.5rem;
+}
+
+.icone-titulo {
+    color: #5260FF;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 2.5rem;
+}
+
+/* ========================= */
+/* GRID DE CARDS             */
+/* ========================= */
+
+.cards-time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.card-membro {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 1.5rem 1.2rem;
+    width: 28%;
+    min-width: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* ========================= */
+/* FOTO PLACEHOLDER          */
+/* ========================= */
+
+.foto {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 0.8rem;
+}
+.foto-m{
+    width: 90px;
+    height: 90px;
+    background: #ccc;
+    margin-bottom: 0.8rem;
+    background-image: url("../image/melissa.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.foto-p{
+    width: 90px;
+    height: 90px;
+    background: #ccc;
+    margin-bottom: 0.8rem;
+    background-image: url("../image/pedro.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.foto-h{
+    width: 90px;
+    height: 90px;
+    background: #ccc;
+    margin-bottom: 0.8rem;
+    background-image: url("../image/henrique.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.foto-l{
+    width: 90px;
+    height: 90px;
+    background: #ccc;
+    margin-bottom: 0.8rem;
+    background-image: url("../image/lud.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.foto-a{
+    width: 90px;
+    height: 90px;
+    background: #ccc;
+    margin-bottom: 0.8rem;
+    background-image: url("../image/arthur.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card-membro h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #5260FF;
+    margin: 0;
+}
+
+.card-membro p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+}
+.icones-social {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+    justify-content: center;
+}
+.icones-social a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #5260FF;
+    transition: 0.3s;
+}
+.icones-social a:hover {
+    color: #3a49cc;
+    transform: scale(1.1);
+}
+.icones-social .fa-github {
+    color: #111;
+}
+.icones-social .fa-github:hover {
+    color: #444;
+}
+
+
+/* ========================= */
+/* 1024px                    */
+/* ========================= */
+
+@media (max-width: 1024px) {
+    .card-membro {
+        width: 28%;
+    }
+}
+
+/* ========================= */
+/* 768px                     */
+/* ========================= */
+
+@media (max-width: 768px) {
+    .card-membro {
+        width: 45%;
+    }
+
+    .cards-time {
+        max-width: 100%;
+    }
+}
+
+/* ========================= */
+/* 600px                     */
+/* ========================= */
+
+@media (max-width: 600px) {
+    .quem-somos h1 {
+        font-size: 1.8rem;
+    }
+
+    .card-membro {
+        width: 45%;
+        min-width: 150px;
+    }
+
+    .foto {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+/* ========================= */
+/* 480px                     */
+/* ========================= */
+
+@media (max-width: 480px) {
+    .quem-somos h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .card-membro {
+        width: 100%;
+    }
+
+    .foto {
+        width: 70px;
+        height: 70px;
+    }
+}

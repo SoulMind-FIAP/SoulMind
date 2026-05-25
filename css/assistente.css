@@ -15,7 +15,6 @@ main{
     align-items: center;
     flex-direction: column;
     background: linear-gradient(180deg, #b0adf7, #a6d3f3);
-
 }
 #hero{
     position: relative;

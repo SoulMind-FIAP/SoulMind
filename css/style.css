@@ -9,7 +9,7 @@ body{
 
     font-family: 'Poppins', sans-serif;
     background: #F4F3FF;
-    color: #111;
+    color: black;
 }
 header{
     position: relative;
@@ -52,7 +52,7 @@ nav .active{
 .hero-text{
     width: 60%;
 }
-.hero-text h1{
+h1{
     font-size: 64px;
     line-height: 1.2;
     margin-bottom: 1.5rem;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
     <title>Soul Mind</title>
 </head>
 <body>
@@ -20,66 +21,49 @@
       <a class="active" href="./pages/contato.html">CONTATO</a>
     </nav>
   </header>
-    <h1>Entre em contato</h1>
-    <main>
-        <form>
-            <div container do forms>
-                <label for="name">Nome completo</label>
-                <input type="text" id="name" placeholder="Digite seu nome completo">
+      <main class="contato-pagina">
+ 
+        <!-- TÍTULO -->
+        <h1 class="contato-titulo">
+            <i class="fa-solid fa-envelope icone-titulo"></i> Entre em contato
+        </h1>
+ 
+        <!-- LINHA COM FORMULÁRIO + OUTRAS FORMAS -->
+        <div class="contato-linha">
+ 
+            <!-- FORMULÁRIO -->
+            <div class="formulario-box">
+                <div class="campo">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" placeholder="Digite seu nome completo">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail">
+                </div>
+                <div class="campo">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" placeholder="Digite o assunto da mensagem">
+                </div>
+                <div class="campo">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" rows="6" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar mensagem</button>
             </div>
-            <div contaner do forms>
-                <label for="email">E-mail</label>
-                <input type="text" id="email" placeholder="Digite seu e-mail">
-            </div>
-
-            <div container do forms>
-                <label for="subject">Assunto</label>
-                <input type="text" id="subject" placeholder="Digite o assunto da mensagem">
-            </div>
+ 
             
-            <div container do forms>
-                <label for="message">Mensagem</label>
-                <input type="text" id="message" placeholder="Escreva sua mensagem">
+        <!-- BANNER FINAL -->
+        <div class="banner-final">
+            <div class="banner-texto">
+                <h2>Vamos juntos transformar o mundo!</h2>
+                <p>Sua mensagem é muito importante para nós.</p>
             </div>
-
-            <button type="submit">Enviar mensagem</button>
-
-        </form>
-
-        <section outras formas de contato>
-
-            <h2>Outras formas de contato</h2>
-            
-            <div>
-                //<a logo do email></a> 
-                <h3>Email</h3>
-                <h4>contato@soulmind.com</h4>
+            <div class="banner-robo">
+                <img src="../image/robo-contato.png" alt="Robô SoulMind">
             </div>
-            
-            <div>
-                <a logo do instagram></a>
-            <h3>Instagram</h3>
-            <h4>@soulmind</h4>
-            </div>
-            
-            <div>
-                <a logo do linkedin></a>
-                <h3>LinkedIn</h3>
-                <h4>SoulMind</h4>
-            </div>
-
-            <div>
-                <a logo da localizacao></a>
-                <h3>Localização</h3>
-                <h4>São Paulo - SP</h4>
-            </div>
-        </section>
-
-        <section Banner de baixo>
-
-            <h2>Vamos juntos transformar o mundo!</h2>
-            <h3>Sua mensagem é muito importante para nós.</h3>
-            <a foto do robo da direita></a>
-        </section>
+        </div>
+ 
     </main>
 </body>
+</html>
